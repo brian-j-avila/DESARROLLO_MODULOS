@@ -24,7 +24,7 @@
             echo "<tr>";
             echo "<td>" . $row['ID'] . "</td>";
             echo "<td>" . $row['TP_user'] . "</td>";
-            echo "<td><a href='editar_php/editar_roles.php?id=" . $row['ID'] . "'>Editar</a> | <a href='delete.php?id=" . $row['ID'] . "'>Eliminar</a></td>";
+            echo "<td><a href='editar_php/editar_roles.php?id=" . $row['ID'] . "'>Editar</a> | <a href='eliminar_php/eliminar_rol.php?id=" . $row['ID'] . "'>Eliminar</a></td>";
             echo "</tr>";
         }
     } else {

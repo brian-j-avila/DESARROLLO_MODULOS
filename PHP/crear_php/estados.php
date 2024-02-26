@@ -17,7 +17,7 @@
 
 <?php
 
-include '../conexion/db.php';
+include '../../conexion/db.php';
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

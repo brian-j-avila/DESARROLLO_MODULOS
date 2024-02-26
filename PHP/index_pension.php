@@ -24,7 +24,7 @@
             echo "<tr>";
             echo "<td>" . $row['ID'] . "</td>";
             echo "<td>" . $row['valor'] ." "."%". "</td>";
-            echo "<td><a href='editar_php/editar_pension.php?id=" . $row['ID'] . "'>Editar</a> | <a href='delete.php?id=" . $row['ID'] . "'>Eliminar</a></td>";
+            echo "<td><a href='editar_php/editar_pension.php?id=" . $row['ID'] . "'>Editar</a> | <a href='eliminar_php/eliminar_pension.php?id=" . $row['ID'] . "'>Eliminar</a></td>";
             echo "</tr>";
         }
     } else {
