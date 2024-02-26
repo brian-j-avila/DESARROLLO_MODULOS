@@ -28,7 +28,7 @@
             echo "</tr>";
         }
     } else {
-        echo "No hay roles registrados.";
+        echo "No hay rolles registrados.";
     }
     ?>
 </table>

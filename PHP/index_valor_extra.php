@@ -24,7 +24,7 @@
             echo "<tr>";
             echo "<td>" . $row['ID'] . "</td>";
             echo "<td>" . $row['V_H_extra'] ." "."PESOS". "</td>";
-            echo "<td><a href='edit.php?id=" . $row['ID'] . "'>Editar</a> | <a href='delete.php?id=" . $row['ID'] . "'>Eliminar</a></td>";
+            echo "<td><a href='editar_php/editar_valor_extra.php?id=" . $row['ID'] . "'>Editar</a> | <a href='delete.php?id=" . $row['ID'] . "'>Eliminar</a></td>";
             echo "</tr>";
         }
     } else {

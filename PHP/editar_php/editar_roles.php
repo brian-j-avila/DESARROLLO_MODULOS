@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
     <input type="text" name="tp_usuarios" value="<?php echo $tp_usuarios; ?>"><br>
     <input type="hidden" name="ID_USER" value="<?php echo $id; ?>">
     
-    <input type="submit" name="update" value="Actualizar Rol">
+    <input type="submit" name="update" value="Actualizar Roll">
 </form>
 <?php
 

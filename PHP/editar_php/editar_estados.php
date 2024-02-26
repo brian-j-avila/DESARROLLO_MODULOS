@@ -20,9 +20,9 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
         $row = $result->fetch_assoc();
         $estado = $row['Estado'];
 ?>
-<form action="editar_roles.php" method="post">
+<form action="editar_estados.php" method="post">
     Tipo de Usuario:<br>
-    <input type="text" name="Estado" value="<?php echo $tp_usuarios; ?>"><br>
+    <input type="text" name="estado" value="<?php echo $estado; ?>"><br>
     <input type="hidden" name="ID" value="<?php echo $id; ?>">
     
     <input type="submit" name="update" value="Actualizar estado">
@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update'])) {
     $estado = $_POST['estado'];
     $ID= $_POST['ID'];
 
-    $sql = "UPDATE estado SET Estado='$estado' WHERE ID=$ID_USER";
+    $sql = "UPDATE Estado SET Estado='$estado' WHERE ID=$ID";
 
     if ($conn->query($sql) === TRUE) {
         echo "estado actualizado correctamente.";
