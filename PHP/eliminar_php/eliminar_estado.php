@@ -24,7 +24,7 @@
 
             if ($conn->query($sql) === TRUE) {
                 $mensaje = "estado eliminado correctamente.";
-                header("Location:../index_estados.php?mensaje=" . urlencode($mensaje));
+                header("Location:../../index.php?mensaje=" . urlencode($mensaje));
             } else {
                 $mensaje = "Error al eliminar el estado: " . $conn->error;
                 echo "<h2>$mensaje</h2>";

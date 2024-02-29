@@ -24,7 +24,7 @@
 
             if ($conn->query($sql) === TRUE) {
                 $mensaje = "Valor de hora extra eliminado correctamente.";
-                header("Location: ../index_valor_extra.php?mensaje=" . urlencode($mensaje));
+                header("Location:../../index.php?mensaje=" . urlencode($mensaje));
             } else {
                 $mensaje = "Error al eliminar el valor de hora extra: " . $conn->error;
                 echo "<h2>$mensaje</h2>";

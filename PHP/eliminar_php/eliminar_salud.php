@@ -24,7 +24,7 @@
 
             if ($conn->query($sql) === TRUE) {
                 $mensaje = "Valor de salud eliminado correctamente.";
-                header("Location:../index_salud.php?mensaje=" . urlencode($mensaje));
+                header("Location:../../index.php?mensaje=" . urlencode($mensaje));
             } else {
                 $mensaje = "Error al eliminar el valor de salud: " . $conn->error;
                 echo "<h2>$mensaje</h2>";
