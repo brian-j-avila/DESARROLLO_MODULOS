@@ -34,9 +34,9 @@
                 if ($result->num_rows > 0) {
                     while ($row = $result->fetch_assoc()) {
                         echo "<tr>";
-                        echo "<td>" . $row['ID'] . "</td>";
+                        echo "<td>" . $row['ID_Es'] . "</td>";
                         echo "<td>" . $row['Estado'] . "</td>";
-                        echo "<td><a href='PHP/editar_php/editar_estados.php?id=" . $row['ID'] . "'>Editar</a> | <a href='PHP/eliminar_php/eliminar_estado.php?id=" . $row['ID'] . "'>Eliminar</a></td>";
+                        echo "<td><a href='PHP/editar_php/editar_estados.php?id=" . $row['ID_Es'] . "'>Editar</a> | <a href='PHP/eliminar_php/eliminar_estado.php?id=" . $row['ID_Es'] . "'>Eliminar</a></td>";
                         echo "<td><a href='PHP/crear_php/estados.php'>CARGAR</a></td>";
                         echo "</tr>";
                     }

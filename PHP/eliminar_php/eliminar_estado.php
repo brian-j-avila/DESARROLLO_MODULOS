@@ -20,7 +20,7 @@
         $id = $_GET['id'];
 
         if (isset($_GET['confirm']) && $_GET['confirm'] == 'true') {
-            $sql = "DELETE FROM estado WHERE ID = $id";
+            $sql = "DELETE FROM estado WHERE ID_Es = $id";
 
             if ($conn->query($sql) === TRUE) {
                 $mensaje = "estado eliminado correctamente.";
@@ -32,7 +32,7 @@
             exit();
         }
 
-        $sql = "SELECT * FROM estado WHERE ID = $id";
+        $sql = "SELECT * FROM estado WHERE ID_Es = $id";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {

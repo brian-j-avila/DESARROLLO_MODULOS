@@ -19,7 +19,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
         $id = $_GET['id'];
 
-        $sql = "SELECT * FROM estado WHERE ID = $id";
+        $sql = "SELECT * FROM estado WHERE ID_Es = $id";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
@@ -58,7 +58,7 @@
         $id = $_POST['id'];
         $valors = $_POST['Estado'];
 
-        $sql = "UPDATE estado SET Estado='$valors' WHERE ID=$id";
+        $sql = "UPDATE estado SET Estado='$valors' WHERE ID_Es =$id";
 
         if ($conn->query($sql) === TRUE) {
             $mensaje = "El Estado ha sido actualizado correctamente.";
