@@ -29,7 +29,7 @@ if (!isset($_SESSION['id_us'])) {
 }
 
 $id_rol = $_SESSION['id_rol'];
-if ($id_rol == '5') {
+if ($id_rol == '4') {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $NIT = $_POST["NIT"];
     $Serial = $_POST["Serial"];

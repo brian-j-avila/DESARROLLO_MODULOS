@@ -1,6 +1,6 @@
 <?php
 include "../conexion/db.php";
-
+session_start();
 if (!isset($_SESSION['id_us'])) {
     echo '
     <script>
