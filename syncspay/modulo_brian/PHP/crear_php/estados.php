@@ -76,7 +76,7 @@ if ($id_rol == '5') {
     echo '
     <script>
         alert("su rol no tiene acceso a esta pagina");
-        window.location = "../../modulo_larry/PHP/login.php";
+        window.location = "../../../modulo_larry/PHP/login.php";
     </script>
     ';
 }

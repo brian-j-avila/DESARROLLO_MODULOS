@@ -16,7 +16,7 @@ if (!isset($_SESSION['id_us'])) {
 }
 
 $id_rol = $_SESSION['id_rol'];
-if ($id_rol == '5') {
+if ($id_rol == '4') {
 ?>
 <?php
 if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "regm")) {
